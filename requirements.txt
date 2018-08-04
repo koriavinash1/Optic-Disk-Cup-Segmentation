@@ -1,0 +1,7 @@
+numpy
+matplotlib
+jupyter 
+pytorch
+tqdm
+skimage
+
