@@ -56,6 +56,19 @@ pip install -r requirements.txt
 
 <hr>
 
+## Publication
+Our paper is available on arXiv(https://arxiv.org/pdf/1809.05216.pdf)
+
+Please cite with the following Bibtex code:
+~~~
+@article{agrawal2018enhanced,
+  title={Enhanced Optic Disk and Cup Segmentation with Glaucoma Screening from Fundus Images using Position encoded CNNs},
+  author={Agrawal, Vismay and Kori, Avinash and Alex, Varghese and Krishnamurthi, Ganapathy},
+  journal={arXiv preprint arXiv:1809.05216},
+  year={2018}
+}
+~~~
+
 If any comments or issues, pull requests/issues are Welcomed....
 
 Thankyou
