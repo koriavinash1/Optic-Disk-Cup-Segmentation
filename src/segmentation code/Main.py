@@ -81,6 +81,25 @@ def runTrain(nnArchitecture = None):
 
 #--------------------------------------------------------------------------------
 
+def runTest():
+
+	Path = '../processed_data/train_test_split.csv'
+	TestVolPaths = getDataPaths(Path, 'Testing')
+	nnClassCount = nclasses
+
+	trBatchSize = 1
+	imgtransResize = 64
+	imgtransCrop = 64
+
+	pathsModel = ['../models/densenet3D.csv']
+
+	timestampLaunch = ''
+
+	# nnArchitecture = DenseNet121(nnClassCount, nnIsTrained)
+	print ('Testing the trained model')
+	Tester.test(TestVolPaths, pathsModel, nnClassCount, trBatchSize, imgtransResize, imgtransCrop, timestampLaunch)
+#--------------------------------------------------------------------------------
+
 if __name__ == '__main__':
 	main()
 	# runTest()

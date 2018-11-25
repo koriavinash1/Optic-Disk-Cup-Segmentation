@@ -31,6 +31,21 @@ from tqdm import tqdm
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class Trainer ():
+	#---- Train the densenet network
+	#---- TrainVolPaths - path to the directory that contains images
+	#---- TrainLabels - path to the file that contains image paths and label pairs (training set)
+	#---- ValidVolPaths - path to the directory that contains images
+	#---- ValidLabels - path to the file that contains image paths and label pairs (training set)
+	#---- nnArchitecture - model architecture 'DENSE-NET-121', 'DENSE-NET-169' or 'DENSE-NET-201'
+	#---- nnClassCount - number of output classes
+	#---- trBatchSize - batch size
+	#---- trMaxEpoch - number of epochs
+	#---- transResize - size of the image to scale down to (not used in current implementation)
+	#---- transCrop - size of the cropped image
+	#---- launchTimestamp - date/time, used to assign unique name for the checkpoint file
+
+	#---- TODO:
+	#---- checkpoint - if not None loads the model and continues training
 
 	def train (self, TrainPath, ValidPath, nnArchitecture, nnClassCount, trBatchSize, trMaxEpoch, timestampLaunch, checkpoint):
 
